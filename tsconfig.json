@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "rootDir": ".",
+    "target": "es5",
+    "outDir": "build",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "lib": ["dom"]
+  },
+  "jsx": "react",
+  "ts-node": {
+    "module": "es6"
+  },
+  "include": ["src/**/*", "test/**/*.ts"]
+}
