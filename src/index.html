@@ -14,7 +14,7 @@
 
     <!-- <link rel="stylesheet" href="css/home.css" /> 
     <link rel="stylesheet" href="css/mobile.css" />-->
-    
+
     <link rel="stylesheet" href="css/style.css">
     <script type="module" src="js/top-header.ts"></script>
     <script type="module" src="js/mobile-menu.ts"></script>
@@ -30,37 +30,38 @@
 </head>
 
 <body>
-    
+
     <!--Second Section-->
     <div class="main-container">
         <!--Navbar-->
         <header class="site-header">
             <div class="wrapper site-header__wrapper">
-              <div class="site-header__start">
-                <!-- <a href="#" class="brand">Brand</a> -->
-                <img src="img/nav-my-logo.png" alt="logo">
-              </div>
-              <div class="site-header__middle">
-                <nav class="nav">
-                  <img onclick="myFunction()" class="nav__toggle"  src="img/Vector(10).png" alt="nav btn">
-                  <!-- <button class="nav__toggle" aria-expanded="false" type="button">menu</button> -->
-                  <ul class="nav__wrapper">
-                    <li class="nav__item"><a href="#">Why Us</a></li>
-                    <li class="nav__item"><a href="#">Customer Reviews</a></li>
-                    <li class="nav__item"><a href="#">How it Works</a></li>
-                    <li class="nav__item"><a href="#">FAQ</a></li>
-                    <li class="nav__item"><a href="#">Pricing</a></li>
-                    <li class="nav__item"><a href="#">Contact</a></li>
-                  </ul>
-                </nav>
-              </div>
-              <div class="site-header__end">
-                <a href="#">Get Started</a>
-              </div>
+                <div class="site-header__start">
+                    <!-- <a href="#" class="brand">Brand</a> -->
+                    <img src="img/nav-my-logo.png" alt="logo">
+                </div>
+                <div class="site-header__middle">
+                    <nav class="nav">
+                        <img onclick="myFunction()" class="nav__toggle" src="img/Vector(10).png" alt="nav btn">
+                        <!-- <button class="nav__toggle" aria-expanded="false" type="button">menu</button> -->
+                        <ul class="nav__wrapper">
+                            <li class="nav__item"><a class="nav-btn active" href="#whyus">Why Us</a></li>
+                            <li class="nav__item"><a class="nav-btn" href="#CustomerReviews">Customer Reviews</a></li>
+                            <li class="nav__item"><a class="nav-btn" href="#howitworks">How it Works</a></li>
+                            <li class="nav__item"><a class="nav-btn" href="#faq">FAQ</a></li>
+                            <li class="nav__item"><a class="nav-btn" href="#pricing">Pricing</a></li>
+                            <li class="nav__item"><a class="nav-btn" href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="site-header__end">
+                    <a href="#">Get Started</a>
+                </div>
             </div>
-          </header>
+        </header>
         <!--Navbar End-->
         <div class="banner-section">
+            <img src="img/wizyu logo.png" alt="">
             <div class="shape">
                 <div class="banner-content">
                     <h2>TAKE THE FIRST STEP.</h2>
@@ -71,7 +72,7 @@
 
             </div>
         </div>
-        <div class="section-second">
+        <div class="section-second" id="whyus">
             <div class="second-img-section">
                 <img src="img/combined-pics.png" alt="section-image" />
             </div>
@@ -117,7 +118,7 @@
             </div>
         </div>
         <!--What Our Clients Says-->
-        <div class="client-section">
+        <div class="client-section" id="CustomerReviews">
             <p class="section-main-heading">
                 What Our Client Say
             </p>
@@ -204,7 +205,7 @@
             </div>
         </div>
         <!--How it Works-->
-        <div class="how-it-work-section">
+        <div class="how-it-work-section" id="howitworks">
             <div class="how-it-work-head">
                 <p class="section-main-heading">
                     HOW IT WORKS
@@ -287,7 +288,7 @@
         </div>
         <!--End How it Works-->
         <!--Life style-->
-        <div class="lifestyle-section">
+        <div class="lifestyle-section" id="pricing">
             <div class="lifestyle-content">
                 <h4>Find A New Lifestyle</h4>
                 <p>THE DIFFERENCE HOW OFTEN YOU MEET YOUR COACH.</p>
@@ -295,20 +296,21 @@
 
             <div class="lifestyle-card-section">
                 <div class="inner-card-section">
-                    <div class="lifestyle-card" >
-                       <div class="life-style-card-top-head-section">
-                        <h2>Standard Plans</h2>
-                        <div class = 'lifestyle-card-sub-content'>
-                            <p >COACHING CALLS</p>
-                            <p>ONCE A MONTH</p>
+                    <div class="lifestyle-card">
+                        <div class="life-style-card-top-head-section">
+                            <h2>Standard Plans</h2>
+                            <div class='lifestyle-card-sub-content'>
+                                <p>COACHING CALLS</p>
+                                <p>ONCE A MONTH</p>
+                            </div>
+                            <div class="lifestyle-card-content">
+                                <p>$15/month</p>
+                                <p>Lorem ipsum dolor sit amet consectetur.
+                                    Dui adipiscing sed lobortis ut ut leo magnis pulvinar morbi. Proin ultrices
+                                    porttitor id sit.</p>
+                            </div>
                         </div>
-                        <div class="lifestyle-card-content">
-                            <p>$15/month</p>
-                            <p>Lorem ipsum dolor sit amet consectetur.
-                            Dui adipiscing sed lobortis ut ut leo magnis pulvinar morbi. Proin ultrices porttitor id sit.</p>
-                        </div>
-                       </div>
-                        
+
                         <div class="view-detail">
                             <a href="#">View Program Details</a>
                         </div>
@@ -319,26 +321,27 @@
 
                     <div class="lifestyle-card">
                         <div class="life-style-card-top-head-section">
-                            
+
                             <h2>Standard Plans</h2>
-                            <div class = 'lifestyle-card-sub-content'>
-                                <p >COACHING CALLS</p>
+                            <div class='lifestyle-card-sub-content'>
+                                <p>COACHING CALLS</p>
                                 <p>Weekly</p>
                             </div>
                             <div class="lifestyle-card-content">
                                 <p>$25/month</p>
                                 <p>Lorem ipsum dolor sit amet consectetur.
-                                Dui adipiscing sed lobortis ut ut leo magnis pulvinar morbi. Proin ultrices porttitor id sit.</p>
+                                    Dui adipiscing sed lobortis ut ut leo magnis pulvinar morbi. Proin ultrices
+                                    porttitor id sit.</p>
                             </div>
-                           </div>
-                            
-                            <div class="view-detail">
-                                <a href="#">View Program Details</a>
-                            </div>
-                            <div class="enrollment">
-                                <a href="#">ENROLL NOW</a>
-                            </div>
-                            
+                        </div>
+
+                        <div class="view-detail">
+                            <a href="#">View Program Details</a>
+                        </div>
+                        <div class="enrollment">
+                            <a href="#">ENROLL NOW</a>
+                        </div>
+
 
                     </div>
                 </div>
@@ -347,16 +350,16 @@
         </div>
         <!--ALL Plans-->
         <div class="all-plans-section">
-         <div class="all-plan-content" >
-            <p class="plans-include">ALL PLANS INCLUDE:</p>
-            <p>Lorem ipsum dolor sit amet consectetur.
-             Accumsan platea urna faucibus rutrum phasellus elit velit orci.
-             Etiam ultrices feugiat.</p>
-             <p>No cancellation fees | No <br>contracts</p>
-             <a href="#">
-                LEARN MORE ABOUT OUR PLANS
-             </a>
-         </div>
+            <div class="all-plan-content">
+                <p class="plans-include">ALL PLANS INCLUDE:</p>
+                <p>Lorem ipsum dolor sit amet consectetur.
+                    Accumsan platea urna faucibus rutrum phasellus elit velit orci.
+                    Etiam ultrices feugiat.</p>
+                <p>No cancellation fees | No <br>contracts</p>
+                <a href="#">
+                    LEARN MORE ABOUT OUR PLANS
+                </a>
+            </div>
         </div>
         <!--Health Section-->
         <div class="healthy-food-section ">
@@ -370,34 +373,34 @@
         <!--Coaches Section-->
         <div class="coaches-section">
             <div class="coaches-main-content-section">
-               <p>Diet & nutrition experts</p> 
-               <p>MEET OUR COACHES</p>
+                <p>Diet & nutrition experts</p>
+                <p>MEET OUR COACHES</p>
             </div>
             <div class="coaches-cards-section">
-              <div class="coach-card">
-                <img src="img/coa-1.png" alt="" style="max-width: 100%; height: auto;">
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-              </div>
-              <div class="coach-card">
-                <img src="img/coa-2.png" alt="" style="max-width: 100%; height: auto;">
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-              </div>
-              <div class="coach-card">
-                <img src="img/coa-3.png" alt="" style="max-width: 100%; height: auto;">
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-              </div>
-              <div class="coach-card">
-                <img src="img/coa-4.png" alt="" style="max-width: 100%; height: auto;">
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-              </div>
+                <div class="coach-card">
+                    <img src="img/coa-1.png" alt="" style="max-width: 100%; height: auto;">
+                    <p>Lorem Ipsum</p>
+                    <p>Lorem Ipsum</p>
+                </div>
+                <div class="coach-card">
+                    <img src="img/coa-2.png" alt="" style="max-width: 100%; height: auto;">
+                    <p>Lorem Ipsum</p>
+                    <p>Lorem Ipsum</p>
+                </div>
+                <div class="coach-card">
+                    <img src="img/coa-3.png" alt="" style="max-width: 100%; height: auto;">
+                    <p>Lorem Ipsum</p>
+                    <p>Lorem Ipsum</p>
+                </div>
+                <div class="coach-card">
+                    <img src="img/coa-4.png" alt="" style="max-width: 100%; height: auto;">
+                    <p>Lorem Ipsum</p>
+                    <p>Lorem Ipsum</p>
+                </div>
             </div>
         </div>
         <!-- section acordian -->
-        <div class="acordian-section">
+        <div class="acordian-section" id="faq">
             <!-- accordian image column -->
             <div class="col-image-accordians">
                 <img src="img/ques pic.png" alt="">
@@ -407,60 +410,72 @@
                 <h2>Frequent Questions</h2>
                 <div class="accordion-wrapper">
                     <div class="accordion">
-                      <input class="input-accordian" type="radio" name="radio-a" id="check1" checked>
-                      <label class="accordion-label" for="check1">Are WIZYU coaches real humans?</label>
-                      <div class="accordion-content">
-                        <p>Lorem ipsum dolor sit amet consectetur. Velit bibendum ut tincidunt id vitae. Enim placerat non turpis vitae 
-                            mattis proin. Ipsum nibh mi auctor vel. Iaculis non pulvinar cursus sed. Condimentum eget pharetra lectus.
-                             </p>
-                      </div>
+                        <input class="input-accordian" type="radio" name="radio-a" id="check1" checked>
+                        <label class="accordion-label" for="check1">Are WIZYU coaches real humans?</label>
+                        <div class="accordion-content">
+                            <p>Lorem ipsum dolor sit amet consectetur. Velit bibendum ut tincidunt id vitae. Enim
+                                placerat non turpis vitae
+                                mattis proin. Ipsum nibh mi auctor vel. Iaculis non pulvinar cursus sed. Condimentum
+                                eget pharetra lectus.
+                            </p>
+                        </div>
                     </div>
                     <div class="accordion">
-                      <input class="input-accordian" type="radio" name="radio-a" id="check2">
-                      <label class="accordion-label" for="check2">Does WIZYU provide 24/7 support?</label>
-                      <div class="accordion-content">
-                        <p>Lorem ipsum dolor sit amet consectetur. Velit bibendum ut tincidunt id vitae. Enim placerat non turpis vitae 
-                            mattis proin. Ipsum nibh mi auctor vel. Iaculis non pulvinar cursus sed. Condimentum eget pharetra lectus.
-                             </p>
-                      </div>
+                        <input class="input-accordian" type="radio" name="radio-a" id="check2">
+                        <label class="accordion-label" for="check2">Does WIZYU provide 24/7 support?</label>
+                        <div class="accordion-content">
+                            <p>Lorem ipsum dolor sit amet consectetur. Velit bibendum ut tincidunt id vitae. Enim
+                                placerat non turpis vitae
+                                mattis proin. Ipsum nibh mi auctor vel. Iaculis non pulvinar cursus sed. Condimentum
+                                eget pharetra lectus.
+                            </p>
+                        </div>
                     </div>
                     <div class="accordion">
-                      <input class="input-accordian" type="radio" name="radio-a" id="check3">
-                      <label class="accordion-label" for="check3">Do WIZYU coaches respond instantly?</label>
-                      <div class="accordion-content">
-                        <p>Lorem ipsum dolor sit amet consectetur. Velit bibendum ut tincidunt id vitae. Enim placerat non turpis vitae 
-                            mattis proin. Ipsum nibh mi auctor vel. Iaculis non pulvinar cursus sed. Condimentum eget pharetra lectus.
-                             </p>
-                      </div>
+                        <input class="input-accordian" type="radio" name="radio-a" id="check3">
+                        <label class="accordion-label" for="check3">Do WIZYU coaches respond instantly?</label>
+                        <div class="accordion-content">
+                            <p>Lorem ipsum dolor sit amet consectetur. Velit bibendum ut tincidunt id vitae. Enim
+                                placerat non turpis vitae
+                                mattis proin. Ipsum nibh mi auctor vel. Iaculis non pulvinar cursus sed. Condimentum
+                                eget pharetra lectus.
+                            </p>
+                        </div>
                     </div>
                     <div class="accordion">
                         <input class="input-accordian" type="radio" name="radio-a" id="check4">
                         <label class="accordion-label" for="check4">Does WIZYU use a mobile app?</label>
                         <div class="accordion-content">
-                          <p>Lorem ipsum dolor sit amet consectetur. Velit bibendum ut tincidunt id vitae. Enim placerat non turpis vitae 
-                              mattis proin. Ipsum nibh mi auctor vel. Iaculis non pulvinar cursus sed. Condimentum eget pharetra lectus.
-                               </p>
+                            <p>Lorem ipsum dolor sit amet consectetur. Velit bibendum ut tincidunt id vitae. Enim
+                                placerat non turpis vitae
+                                mattis proin. Ipsum nibh mi auctor vel. Iaculis non pulvinar cursus sed. Condimentum
+                                eget pharetra lectus.
+                            </p>
                         </div>
-                      </div>
-                      <div class="accordion">
+                    </div>
+                    <div class="accordion">
                         <input class="input-accordian" type="radio" name="radio-a" id="check5">
                         <label class="accordion-label" for="check5">What foods are allowed?</label>
                         <div class="accordion-content">
-                          <p>Lorem ipsum dolor sit amet consectetur. Velit bibendum ut tincidunt id vitae. Enim placerat non turpis vitae 
-                              mattis proin. Ipsum nibh mi auctor vel. Iaculis non pulvinar cursus sed. Condimentum eget pharetra lectus.
-                               </p>
+                            <p>Lorem ipsum dolor sit amet consectetur. Velit bibendum ut tincidunt id vitae. Enim
+                                placerat non turpis vitae
+                                mattis proin. Ipsum nibh mi auctor vel. Iaculis non pulvinar cursus sed. Condimentum
+                                eget pharetra lectus.
+                            </p>
                         </div>
-                      </div>
-                      <div class="accordion">
+                    </div>
+                    <div class="accordion">
                         <input class="input-accordian" type="radio" name="radio-a" id="check6">
                         <label class="accordion-label" for="check6">Does WIZYU include workouts?</label>
                         <div class="accordion-content">
-                          <p>Lorem ipsum dolor sit amet consectetur. Velit bibendum ut tincidunt id vitae. Enim placerat non turpis vitae 
-                              mattis proin. Ipsum nibh mi auctor vel. Iaculis non pulvinar cursus sed. Condimentum eget pharetra lectus.
-                               </p>
+                            <p>Lorem ipsum dolor sit amet consectetur. Velit bibendum ut tincidunt id vitae. Enim
+                                placerat non turpis vitae
+                                mattis proin. Ipsum nibh mi auctor vel. Iaculis non pulvinar cursus sed. Condimentum
+                                eget pharetra lectus.
+                            </p>
                         </div>
-                      </div>
-                  </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- healthy food section  -->
@@ -473,7 +488,7 @@
             </div>
         </div>
         <!-- foorter section  -->
-        <footer class="footer">
+        <footer class="footer" id="contact">
             <div class="col1">
                 <h1 class="h1-Contact">Contact Us</h1>
                 <p class="p_contact">Email &nbsp;<a href="#"> info@.com</a></p>
@@ -506,7 +521,7 @@
 
             <div class="col1">
                 <h1 class="h1-SiGN">SiGN UP</h1>
-                <a class="button_signup"href="#">Choose Program</a>
+                <a class="button_signup" href="#">Choose Program</a>
                 <h1 class="AdventureBlog">Adventure Blog</h1>
                 <p class="advanturespan">Lorem ipsum dolor sit amet consectetur. Vestibulum diam.</p>
             </div>
@@ -515,55 +530,74 @@
                 <h1 class="h1-Subscribe">Subscribe</h1>
                 <p class="p_subscribe">Lorem ipsum dolor sit amet consectetur. Porttitor at.</p>
                 <!-- <input type="email" placeholder="email address" class="inpput_footer_email"> -->
-                <form >
-                    
-                <input type="email" placeholder="email address" class="inpput_footer_email">
-                <input type="submit" placeholder="SUBMIT" class="SUBMIT_footer_email">
+                <form>
+
+                    <input type="email" placeholder="email address" class="inpput_footer_email">
+                    <input type="submit" placeholder="SUBMIT" class="SUBMIT_footer_email">
                 </form>
-                
-               
+
+
             </div>
         </footer>
     </div>
-    
-   
+
+
 
     <script src="https://kit.fontawesome.com/52236845bb.js" crossorigin="anonymous"></script>
     <script>
         let navToggle = document.querySelector(".nav__toggle");
         let navWrapper = document.querySelector(".nav__wrapper");
         var navbar = document.querySelector('.site-header');
-  
+
         navToggle.addEventListener("click", function () {
-       if (navWrapper.classList.contains("active")) {
-          this.setAttribute("aria-expanded", "false");
-          this.setAttribute("aria-label", "menu");
-          navWrapper.classList.remove("active");
-          navbar.classList.remove("site-header__wrapper_bg_gradient");
-        } else {
-          navWrapper.classList.add("active");
-          this.setAttribute("aria-label", "close menu");
-          this.setAttribute("aria-expanded", "true");
-          navbar.classList.add("site-header__wrapper_bg_gradient");
-        }
+            if (navWrapper.classList.contains("active")) {
+                this.setAttribute("aria-expanded", "false");
+                this.setAttribute("aria-label", "menu");
+                navWrapper.classList.remove("active");
+                navbar.classList.remove("site-header__wrapper_bg_gradient");
+            } else {
+                navWrapper.classList.add("active");
+                this.setAttribute("aria-label", "close menu");
+                this.setAttribute("aria-expanded", "true");
+                navbar.classList.add("site-header__wrapper_bg_gradient");
+            }
         });
-  
-  
-        window.addEventListener('scroll', function(){
-                var scrollvalue = window.scrollY;
-                console.log(scrollvalue);
-                if(scrollvalue < 10){
-                    navbar.classList.remove('head_er_bg');
-                    document.querySelector(".site-header__wrapper").style.borderBottom = "1px solid white";
+
+
+        window.addEventListener('scroll', function () {
+            var scrollvalue = window.scrollY;
+            console.log(scrollvalue);
+            if (scrollvalue < 10) {
+                navbar.classList.remove('head_er_bg');
+                document.querySelector(".site-header__wrapper").style.borderBottom = "1px solid white";
+            }
+            else {
+                navbar.classList.add('head_er_bg');
+                document.querySelector(".site-header__wrapper").style.borderBottom = "none";
+            }
+
+        })
+
+        var btnContainer = document.getElementById("myDIV");
+
+        // Get all buttons with class="btn" inside the container
+        var btns = btnContainer.getElementsByClassName("nav-btn");
+
+        // Loop through the buttons and add the active class to the current/clicked button
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+
+                // If there's no active class
+                if (current.length > 0) {
+                    current[0].className = current[0].className.replace(" active", "");
                 }
-                else{
-                    navbar.classList.add('head_er_bg');
-                    document.querySelector(".site-header__wrapper").style.borderBottom = "none";
-                }
-                
-            })
-        
-      </script>
+
+                // Add the active class to the current/clicked button
+                this.className += " active";
+            });
+        }
+    </script>
 </body>
 
 </html>
