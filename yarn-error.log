@@ -1,0 +1,73 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\ibrah\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Users\ibrah\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\ibrah\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python310\Scripts;C:\Python310;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\ibrah\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\ibrah\AppData\Local\Android\Sdk\platform-tools;C:\Users\ibrah\AppData\Local\Android\Sdk\tools;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Users\ibrah\AppData\Local\Microsoft\WindowsApps;C:\Users\ibrah\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ibrah\AppData\Roaming\npm;C:\Users\ibrah\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\ibrah\AppData\Local\Android\Sdk\platform-tools;C:\Users\ibrah\AppData\Local\Android\Sdk\tools;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Users\ibrah\AppData\Local\GitHubDesktop\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.15.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)
+
+npm manifest: 
+  {
+    "name": "web.wizyu.io",
+    "version": "1.0.0",
+    "description": "",
+    "source": [
+      "src/index.html",
+      "src/hey.html",
+      "src/privacy.html",
+      "src/terms.html",
+      "src/register.html",
+      "src/apply.html"
+    ],
+    "scripts": {
+      "start:dev": "parcel"
+      },
+      
+    "author": "",
+    "private": true,
+    "license": "ISC",
+    "dependencies": {
+      "@types/react": "^18.0.21",
+      "@types/react-dom": "^18.0.6",
+      "express": "^4.17.3",
+      "font-awesome": "^4.7.0",
+      "got": "^12.0.3",
+      "html-minifier": "^4.0.0",
+      "intl-tel-input": "^17.0.16",
+      "prettier": "^2.8.0",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+      "@types/express": "^4.17.13",
+      "@types/node": "^17.0.23",
+      "clean-webpack-plugin": "^4.0.0",
+      "mini-css-extract-plugin": "^2.6.0",
+      "parcel": "^2.4.1",
+      "path-browserify": "^1.0.1",
+      "posthtml-include": "^1.7.3",
+      "process": "^0.11.10",
+      "ts-loader": "^9.2.8",
+      "ts-node-dev": "^1.1.8",
+      "typescript": "^4.6.3",
+      "webpack": "^5.72.0",
+      "webpack-cli": "^4.9.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
