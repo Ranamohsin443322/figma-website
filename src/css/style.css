@@ -40,6 +40,8 @@
 }
 .icon-content p{
     margin-left: 20px;
+    font-weight: 500 /*2nd change*/
+    ;
     font-size: 16px;
     color: #2A2A2A;
     font-family: Poppins;
@@ -155,6 +157,7 @@
     line-height: 27.2px;
     color: #2A2A2A;
     margin-bottom: 20px;
+    font-weight: 500;
 }
  .button .btn-1{
     color: white;
@@ -429,7 +432,7 @@ p.dot {
     flex-direction: column;
     justify-content: space-between;
     height: 521px; margin: 20px; padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, 0.5);/*2nd change*/
 }
 .lifestyle-card-sub-content{
     background-color: #163C6D;
@@ -579,7 +582,9 @@ p.dot {
     flex-basis: 288px;
     padding: 20px;
     margin: 20px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+    /*2nd change */
+    /* shadow removed */
     border-radius: 10px;
     text-align: center;
 }
@@ -692,6 +697,7 @@ input.input-accordian {
     background: #fafafa4f;/*change*/
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
+    border: 1px solid #EDEDED;/*2nd change*/
     
     border-radius: 0px 0px 10px 10px;/*change*/
 }
@@ -810,8 +816,9 @@ letter-spacing: 0.6px;
 text-decoration: none;
 color: #4DCECA;
 }
-.appstore {
-    padding: 40px 0;
+.appstore { /*2nd change*/
+    padding: 15px 0;
+    margin-top: 16px;
 }
 .googlestore {
     margin-top: 10px;
@@ -963,7 +970,7 @@ input.SUBMIT_footer_email {
 .footer_mobile_view{
     width: 100%;
     background-color: #3A3A3A;
-    padding: 100px 50px;
+    padding: 50px 50px;
     font-family: Poppins;
     font-style: normal;
     display: none;
@@ -986,7 +993,7 @@ order: 0;
 flex-grow: 0;
 }
 .footer_mobile_subscribe_sec p{
-    padding: 10px 0px;
+    padding: 5px 0px; /*2nd change*/
     text-align: center;
     font-style: normal;
 font-weight: 400;
@@ -1011,7 +1018,7 @@ flex-grow: 0;
     border: 2px solid #FFFFFF;
     border-radius: 4px;
     background: none;
-    padding: 10px;
+    padding:15px 10px; /*2nd change*/
     width: 95%;
 }
 
@@ -1063,9 +1070,11 @@ flex-grow: 0;
 }
 .footer_mobile_about_sec{
     width: 100%;
+    margin-top: 25px;/*2nd change*/
 }
 .footer_mobile_about_sec h1{
     font-weight: 700;
+    margin-bottom: 40px; /*2nd change*/
 font-size: 32px;
 line-height: 48px;
 /* identical to box height */
@@ -1086,9 +1095,12 @@ color: #FFFFFF;
     text-decoration: none;
     display: flex;
 }
+.legal-one{
+    margin-top: 70px !important; /*2nd change*/
+}
 .footer_mobile_legal_sec{
     width: 100%;
-    padding-top: 40px;
+    padding-top: 20px; /*2nd change*/
 }
 .footer_mobile_legal_sec h1{
     font-weight: 700;
@@ -1101,7 +1113,7 @@ color: #FFFFFF;
     text-transform: uppercase;
     color: #fff;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 13px; /*2nd change*/
     font-family: Poppins;
     font-size: 16px;
     font-style: normal;
@@ -1109,6 +1121,9 @@ color: #FFFFFF;
     line-height: 16px;
     text-decoration: none;
     display: flex;
+}
+.footer_mobile_legal_sec .anchor_tags a:nth-child(1){
+    margin-top: 20px;
 }
 .follow_us{
     width: 100%;
@@ -1140,6 +1155,9 @@ color: #FFFFFF;
     margin: 0px 5px;
     padding: 12px;
     font-size: 12px;
+}
+.follow_us .social_icons_follows i:nth-child(1){
+    padding: 12px 14px;/*2nd change*/
 }
 
 
@@ -1207,6 +1225,9 @@ color: #FFFFFF;
     } */
 }
 @media screen and (max-width: 767px){
+    input:checked ~ .accordion-content{
+        padding-top: 0px !important; /*2nc change*/
+    }
     .healthy-food-section  .button .btn-1:nth-child(2){ /*change*/
         display: block;
     }
@@ -1220,9 +1241,11 @@ color: #FFFFFF;
       }
       .banner-section{
         background-position: 100% 100% !important; /*2nd change*/
+        /* background-position: inherit  !important; */
         background-image: url(../img/hero\ section.png) !important; /*2nd change*/
         height: 444px  !important;/*2nd change*/
     }
+
     .footer_mobile_view{
         display: block;
     }
@@ -1235,6 +1258,13 @@ color: #FFFFFF;
     .banner-section .shape{
       background-size: cover;
     }
+    .banner-section img {
+        max-width: 245px;
+        height: 185px;
+        position: absolute;
+        bottom: 0;
+        left: -55px;
+    }
     .coaches-main-content-section p:nth-child(2){
         font-size: 24px;
         font-weight: 400;
@@ -1242,12 +1272,17 @@ color: #FFFFFF;
     }
     .healthy-food-section{
        background-image: url('../img/Rectangle 21.png') !important; /*change*/
+       height: 125px;/*2nd change*/
+       background: center;/*2nd change*/
+        background-repeat: no-repeat;/*2nd change*/
+        background-size: cover;/*2nd change*/
+        background-position: center;/*2nd change*/
     }
     .section-second .second-content-section h4{ /*change*/
         font-weight: 400;
         font-size: 16px;
         margin-bottom: 2px;
-        margin-top: 20px;
+        margin-top: 10px;
     }
     .section-second .second-content-section{ /*change*/
         padding: 0px 30px;
@@ -1261,11 +1296,12 @@ color: #FFFFFF;
         letter-spacing: 0.224653px;
         padding-bottom: 5px;
         margin-bottom: 0;
+        margin-top: -8px; /*2nd change*/
     }
     .healthy-food-section p{
         font-size: 16px; /*change*/
         letter-spacing: 0.05em; /*change*/
-        padding: 0px 20px;
+        padding: 0px 20px; margin-bottom: 10px;
     }
     .client-section .section-main-heading{
         font-family: 'ClanOT-NarrowBook', sans-serif;
@@ -1380,6 +1416,9 @@ color: #FFFFFF;
     .section-second .second-content-section .description br{
         display: none;
     }
+    .section-second .second-content-section .description{
+        margin-top: -8px; /*2nd change*/
+    }
     .acordian-section{
         padding-top: 2px !important;
     }
@@ -1392,13 +1431,14 @@ color: #FFFFFF;
     }
     .lifestyle-content p{
         font-size: 14px;
-        padding: 10px 20px;
+        padding: 10px 25px; /*2nd change*/
     }
     .all-plan-content{
         width: 80%; /*Changes*/
     }
     .all-plan-content a{
         font-size: 14px;
+        font-weight: 400;
     }
     .col-image-accordians {
        display: none;
@@ -1533,6 +1573,7 @@ z-index: 1;}
     }
         .nav__wrapper.active li:hover a{
           background-color: white;
+          width: 100%;
           color: #101828;
         }
       }
@@ -1572,3 +1613,16 @@ z-index: 1;}
         ul li{
             list-style: none;
         }
+@media screen and (max-width:407px) { /*2nd change*/
+    .shape .banner-content h2:nth-child(2n+1){ /*2nd change*/
+        letter-spacing: .8px; 
+        font-size: 23px; /*2nd change*/
+    }
+    .shape .banner-content h2:nth-child(2n) { /*2nd change*/
+        margin: 15px 0;
+        font-size: 23px; /*2nd change*/
+    }
+    .banner-btn{
+        width: 250px;
+    }
+}
