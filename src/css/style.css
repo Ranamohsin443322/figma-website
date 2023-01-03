@@ -1214,11 +1214,14 @@ color: #FFFFFF;
         display: none;
     }
     .banner-section .shape{
+        height: 100% ; /*2nd change*/
         background-image: none;
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(151.8deg, rgba(77, 206, 202, 0.7) 0%, rgba(22, 60, 109, 0.7) 24.67%);;
       }
       .banner-section{
-        background-position: bottom right !important;
+        background-position: 100% 100% !important; /*2nd change*/
+        background-image: url(../img/hero\ section.png) !important; /*2nd change*/
+        height: 444px  !important;/*2nd change*/
     }
     .footer_mobile_view{
         display: block;
@@ -1282,6 +1285,7 @@ color: #FFFFFF;
        justify-content: center;
     }
      .banner-content{
+        margin-top: 75px;/*2nd change*/
         text-align: center;
     }
     .shape .banner-content h2:nth-child(odd){
@@ -1467,7 +1471,6 @@ color: #FFFFFF;
 z-index: 1;}
   .site-header__end a {
     text-decoration: none;
-
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
@@ -1517,7 +1520,7 @@ z-index: 1;}
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(137.99deg, #4DCECA 0%, #163C6D 80.14%);
       visibility: hidden;
       opacity: 0;
-      transform: translateY(-100%);
+      transform: translateX(100%);/*2nd change*/
       transition: transform 0.3s ease-out, opacity 0.3s ease-out; }
       .nav__wrapper.active {
         visibility: visible;
@@ -1526,7 +1529,8 @@ z-index: 1;}
         z-index: 1;
         height: 100vh;
         width: 100%;
-        transform: translateY(0); }
+        transform: translateX(0);  /*2nd change*/
+    }
         .nav__wrapper.active li:hover a{
           background-color: white;
           color: #101828;
