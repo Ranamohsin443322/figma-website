@@ -78,6 +78,9 @@
     max-width: 378px;/*Change*/
     height: auto;
 }
+.small{
+    display: none;
+}
 .banner-section .shape{
     width:100%;
     height: 100vh;
@@ -181,9 +184,9 @@
     width: 100%;
     background-image: url('../img/black\ grapes.png');
     background-size: cover;
-    background-position: center;
+   
     background-repeat: no-repeat;
-    height: 40vh;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -577,12 +580,14 @@ p.dot {
     justify-content: center;
     margin-top: 30px;
     
+}.coaches-cards-section .coach-card-main{
+    padding: 20px;
 }
 .coaches-cards-section .coach-card{
-    flex-basis: 288px;
+    max-width: 288px;
     padding: 20px;
-    margin: 20px;
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+        /*Margin 0 Today Change*/
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; /*Today Change*/
     /*2nd change */
     /* shadow removed */
     border-radius: 10px;
@@ -1164,6 +1169,11 @@ color: #FFFFFF;
 
 
 /*Responsive*/
+@media only screen and (min-width: 992px) and (max-width: 1192px){
+    .coaches-cards-section .coach-card{
+        max-width: 200px;
+    }
+}
 @media screen and (max-width: 992px){
     .section-second .second-img-section{
         width: 100%;
@@ -1240,12 +1250,16 @@ color: #FFFFFF;
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(151.8deg, rgba(77, 206, 202, 0.7) 0%, rgba(22, 60, 109, 0.7) 24.67%);;
       }
       .banner-section{
-        background-position: 100% 100% !important; /*2nd change*/
         /* background-position: inherit  !important; */
         background-image: url(../img/hero\ section.png) !important; /*2nd change*/
         height: 444px  !important;/*2nd change*/
     }
-
+    .active, .nav-btn:hover{
+        border-bottom: none !important; 
+    }
+    .nav ul li:hover{
+        background-color: white;
+    }
     .footer_mobile_view{
         display: block;
     }
@@ -1254,16 +1268,24 @@ color: #FFFFFF;
     }
 }
 @media screen and (max-width: 767px){
-    
+    .client-card-section{
+        padding-bottom: 0px !important;
+    }
     .banner-section .shape{
       background-size: cover;
     }
     .banner-section img {
-        max-width: 245px;
-        height: 185px;
+        max-width: 100%;
+        height: auto;
         position: absolute;
-        bottom: 0;
-        left: -55px;
+        bottom: 34px;
+        left: 0;
+    }
+    .large{
+        display: none;
+    }
+    .small{
+        display: block;
     }
     .coaches-main-content-section p:nth-child(2){
         font-size: 24px;
@@ -1626,3 +1648,27 @@ z-index: 1;}
         width: 250px;
     }
 }
+
+/*Dots*/
+
+.dot-m0-1:nth-child(1){
+    background-color:#163C6D !important;
+    width: 20px;
+    height: 20px;
+    }
+    .dot-m0-1 {
+      height: 15px;
+      width: 15px;
+      margin: 0px 30px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .dot-section{
+        padding-bottom: 50px;
+        text-align:center;
+        display:flex; 
+        align-items:center; 
+        flex-direction:row; 
+        justify-content:center;
+    }
